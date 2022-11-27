@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ */
+/*  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.container-left {
+
+    background-image: url('PXL_20221123_025059024_copy.jpg');
+    background-size: cover;
+    width: 33%;
+    height: auto;
+    border: 2px solid;
+
+  }
+.logo-photo {
+    width: 100%;
+    max-width: 16px;
+    height: auto;
+    margin: 2px 10px;
+    
+} */
+/* .container {
+    display: flex;
+}
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 3em;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    font-size: 24px;
+    border: 2px solid red;
+    margin-top: 5em;
+}
+logo-photo {
+    margin-right: 10px;
+}
+.container-left {
+position: relative;
+    background-image: url('PXL_20221123_025059024_copy.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid;
+
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+  /*   box-sizing: border-box; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+}
+.container-left {
+        background-image: url('PXL_20221123_025059024_copy.jpg');
+        background-size: cover;
+        background-position: center center;
+
+        background-repeat: no-repeat;
+        width: 100vh;
+        min-width: 200px;
+        min-height: 700px;
+height: 100%;
+        border: 2px solid black;
+    
+      }
+.container.right {
+    display: flex;
+    flex-direction: column;
+}
+.container-form,
+.container-header,
+.container-button {
+    height: 33%;
+    padding-left: 24px;
+}
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+.container-button {
+    font-weight: bold;
+    background-color: rgb(250, 250, 250);
+}
+button {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 12px 40px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #596D48;
+    color: white;
+    box-shadow: 1px 2px 3px #888888;
+}
+.login {
+    margin-top: 20px;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+input {
+    border: 1px solid #E5E7EB;
+    font-size: 20px;
+    border-radius: 3px;
+}
