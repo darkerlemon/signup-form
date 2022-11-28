@@ -122,6 +122,7 @@ position: relative;
     justify-content: center;
     font-size: 24px;
     font-family: Helvetica, sans-serif;
+
 }
 .container-left {
         background-image: url('PXL_20221123_025059024_copy.jpg');
@@ -136,16 +137,55 @@ height: 100%;
         border: 2px solid black;
     
       }
+
+
+      .container-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 3em;
+        background-color: rgb(0, 0, 0, 0.4);
+        color: white;
+        font-size: 24px;
+        margin-top: 5em;
+    }
+
+
+
 .container.right {
     display: flex;
     flex-direction: column;
 }
-.container-form,
-.container-header,
-.container-button {
-    height: 33%;
+/* .container-form {
+    height: 40%;
     padding-left: 24px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    flex-direction: row;
+} */
+
+
+
+.container-form {
+    display: block;
+    height: 40%;
+    position: relative;
+
+
+  }
+  .input-container {
+    display: inline-block;
+    position: relative;
+    width: 260px;
+    height: 60px;
+
+  }
+
+
+
+
 .container-header {
     display: flex;
     flex-wrap: wrap;
@@ -153,10 +193,23 @@ height: 100%;
     align-items: center;
     font-weight: bold;
     background-color: rgb(250, 250, 250);
+    height: 35%;
+    padding-left: 24px;
 }
+
+
+.container-form > p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    margin-right: 500px;
+}
+
 .container-button {
     font-weight: bold;
     background-color: rgb(250, 250, 250);
+    height: 25%;
+    padding-left: 24px;
 }
 button {
     margin-top: 20px;
@@ -181,4 +234,50 @@ input {
     border: 1px solid #E5E7EB;
     font-size: 20px;
     border-radius: 3px;
+    outline: none;
+    margin: 10px;
+    width: 200px;
+
 }
+/* .input-container {
+    border: 1px solid black;
+    width: 220px;
+
+} */
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid red;
+}
+input:valid,
+input:focus:valid {
+    border: 1px solid green;
+}
+input:focus {
+    border: 1px solid rgb(96, 96, 235);
+    box-shadow: 1px 2px 3px #888888;
+
+}
+label {
+
+margin-left: 10px;
+    font-size: 16px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    
+}
+@media only screen and (max-width: 550px) {
+    .container {
+        
+    flex-direction: column;}
+    .container-left {
+        min-height: 12em;
+        width: 100%;
+    
+    }
+    .container-form {
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .container-form > p {
+        padding-right: 0;
+    }
+}   
